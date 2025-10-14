@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Repair | TechPro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+       <link rel="stylesheet" href="./style-122.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="navbar-logo">
+                <img src="./android-chrome-512x512.png" alt="Glora Logo">
+            </a>
+            <div class="hamburger" id="hamburger-menu" aria-label="Toggle navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-links" id="navbar-links">
+                <a href="index.html" class="nav-about">Home</a>
+                <a href="shoping.html" class="nav-products">Shop Now</a>
+                <a href="index.html/#testimonials" class="nav-testimonials">Testimonials</a>
+                <a href="#footer" class="nav-contact">Contact Us</a>
+                <a href="index.html/#about" class="nav-about">About Us</a>
+            </div>
+        </div>
+    </nav>
+  
+
+    
+    <div class="container">
+        <h2 class="section-title light-effect">Schedule a Repair</h2>
+        <div class="repair-container">
+            <div class="repair-info">
+                <h3>Fast and Reliable Repair Services</h3>
+                <p>We provide expert repair services for all your electronic devices. Our technicians are certified and experienced in handling various brands and models.</p>
+                <ul>
+                    <li>Free diagnostic service</li>
+                    <li>90-day warranty on all repairs</li>
+                    <li>Same-day service available for most devices</li>
+                    <li>Original and high-quality replacement parts</li>
+                </ul>
+            </div>
+            <div class="repair-form">
+                <h3>Request a Repair</h3>
+                <form id="repairRequestForm" autocomplete="off">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required pattern="[0-9+\-\s]{7,}">
+                    </div>
+                    <div class="form-group">
+                        <label for="device">Device Type</label>
+                        <select id="device" required>
+                            <option value="" disabled selected hidden>Select Device Type</option>
+                            <option value="smartphone">electronics</option>
+                            <option value="laptop">home applys</option>
+                            <option value="tablet">Electrician</option>
+                            <!-- changed -->
+                            <option value="other">plumber</option>
+                            <option value="plumbing">other device</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="issue">Describe the Issue</label>
+                        <textarea id="issue" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Submit Request</button>
+                </form>
+                <div class="success-message" id="successMsg">
+                    <i class="fas fa-check-circle"></i> Your repair request has been submitted!
+                </div>
+                <div class="error-message" id="errorMsg">
+                    <i class="fas fa-exclamation-circle"></i> Please fill in all fields correctly.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Simple form validation and feedback
+        document.getElementById('repairRequestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const device = document.getElementById('device').value;
+            const issue = document.getElementById('issue').value.trim();
+            const successMsg = document.getElementById('successMsg');
+            const errorMsg = document.getElementById('errorMsg');
+            // Simple validation
+            if (name && email && phone && device && issue) {
+                // Simulate successful submission
+                successMsg.style.display = 'block';
+                errorMsg.style.display = 'none';
+                this.reset();
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 3500);
+            } else {
+                errorMsg.style.display = 'block';
+                successMsg.style.display = 'none';
+            }
+        });
+    </script>
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span>&copy; 2025 Glora. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="mailto:gloraservices@gmail.com" title="Email"><i style="font-size:2em;margin-bottom: 10px;" class="fa-solid fa-envelope"></i> Email</a>
+                <a href="#" title="Facebook"><i  style="color:#0862F7;font-size:2em; margin-bottom: 10px;" class="fa-brands fa-facebook" &#xf09a;></i> Facebook</a>
+                <a href="#" title="Twitter"><i style="color:#1C96E8;font-size:2em; margin-bottom: 10px;" class="fa-brands fa-twitter"&#9742;></i> Twitter</a>
+                <a href="tel:+256781000462" title="Phone"><span style="color:#07e007;font-size:2em; margin-bottom: 10px;">&#9742;</span>+256781000462</a>
+                <a href="#" title="Instagram"><i style="color:#fd7289;font-size:2em; margin-bottom: 10px;" class="fa-brands fa-square-instagram" &#xf16d;></i> Instagram</a>
+                <a href="https://wa.me/256781000462" target="_blank" title="Whatsapp"><i style="color:#00B63A;font-size:2em; margin-bottom: 10px;" class="fa-brands fa-square-whatsapp" &#xf232;></i> Whatsapp</a>
+                <!-- <a href="help.html" >Help</a>no need -->
+            </div>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glora - Shop</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style-122.css">
+    <style>
+        /* #continer_catagories{
+            height: 1000px;
+        } */
+        .shop-layout{
+            height: 100%;
+        }
+        .sidebar{
+            height: 90%;
+        }
+        
+       
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="navbar-logo">
+                <img src="./android-chrome-512x512.png" alt="Glora Logo">
+            </a>
+            <div class="cart-icon" style="margin-left: 16px;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="hamburger" id="hamburger-menu" aria-label="Toggle navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-links" id="navbar-links">
+                <a href="index.html" class="nav-about">Home</a>
+                <a href="service schedule.html" class="nav-services">Services</a>
+                <a href="shoping.html" class="nav-products">Shop Now</a>
+                <a href="#testimonials" class="nav-testimonials">Testimonials</a>
+                <a href="#footer" class="nav-contact">Contact Us</a>
+                <a href="#about" class="nav-about">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="container hero-content">
+            <h1>Shop Our Latest Products</h1>
+            <p>Discover the best in electronics, fashion, and more. Enjoy exclusive deals and fast delivery!</p>
+            <div class="hero-buttons">
+                <a href="#electronics" class="btn">Shop Now</a>
+                <a href="service schedule.html" class="btn btn-secondary">Get Service</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="continer">
+        <div id="continer_catagories">
+            <div class="shop-layout">
+            <!-- Sidebar with filters -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Filters</h3>
+                <div class="filter-section">
+                    <h4>Categories</h4>
+                    <ul class="filter-options">
+                        <li><input type="checkbox" id="electronics"> <label for="electronics">Electronics</label></li>
+                        <li><input type="checkbox" id="fashion"> <label for="fashion">Fashion</label></li>
+                        <li><input type="checkbox" id="books"> <label for="books">Book Store</label></li>
+                        <!-- <li><input type="checkbox" id="accessories"> <label for="accessories">Accessories</label></li>
+                        <li><input type="checkbox" id="electronics"> <label for="electronics">Electronics</label></li> -->
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Price Range</h4>
+                    <input type="range" class="price-range" min="0" max="1000" value="500">
+                    <div class="price-values">
+                        <span>$0</span>
+                        <span>$500</span>
+                        <span>$1000</span>
+                    </div>
+                </div>
+                <!-- <div class="filter-section">
+                    <h4>Brand</h4>
+                    <ul class="filter-options">
+                        <li><input type="checkbox" id="nike"> <label for="nike">Nike</label></li>
+                        <li><input type="checkbox" id="adidas"> <label for="adidas">Adidas</label></li>
+                        <li><input type="checkbox" id="apple"> <label for="apple">Apple</label></li>
+                        <li><input type="checkbox" id="samsung"> <label for="samsung">Samsung</label></li>
+                        <li><input type="checkbox" id="zara"> <label for="zara">Zara</label></li>
+                    </ul>
+                </div> -->
+                <!-- <div class="filter-section">
+                    <h4>Rating</h4>
+                    <ul class="filter-options">
+                        <li><input type="checkbox" id="4star"> <label for="4star">4★ & above</label></li>
+                        <li><input type="checkbox" id="3star"> <label for="3star">3★ & above</label></li>
+                        <li><input type="checkbox" id="2star"> <label for="2star">2★ & above</label></li>
+                    </ul>
+                </div> -->
+            </aside>
+            </div>
+        </div>
+        
+
+            <div id="shoping_continer">
+                <h1 id="electronics-section">Electronics</h1>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./laptop.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-headphones"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Apple Laptop</h3>
+                            <div class="product-price">$89.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./apple 15.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-clock"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Apple 15 Pro Max</h3>
+                            <div class="product-price">$129.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./phone case.avif" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Phone Case</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./charger.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Phone Charger</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./tv.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Tv</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./m33.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Samsung M33</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./gaming mouse.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Gaming Mouse</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./smart wach.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Smart Watch</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="wirles head.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Wireless Headset</h3>
+                            <div class="product-price">$4.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./power bank.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Power bank</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./fridge.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fridge</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./blut speaker.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Bluetooth Speaker</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./oven.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Oven</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./juce machine.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Juce machine</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./tablet.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-tablet-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Tablet</h3>
+                            <div class="product-price">$299.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./gaming mouse.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mouse"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Gaming Mouse</h3>
+                            <div class="product-price">$59.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./blut speaker.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Bluetooth Speaker</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./blutooh hphone.jpg" alt="" width="75%" height="170"
+                                style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Bluetooth Headset</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./divider.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Divider</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./computer.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Computer</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 id="fashion-section" style="margin-top: 100px; margin-bottom: 30px; text-align: center;">Fashion</h1>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img1.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-headphones"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Mens jacket</h3>
+                            <div class="product-price">$89.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img2.avif" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-clock"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Shirt</h3>
+                            <div class="product-price">$129.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./led1.png" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pink dress</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./led6.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Womens Dress</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./men5.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Mens Shoes</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./sho1.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">High Lofers Shoes</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./men2.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Mens Shoes</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./thraw2.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Mens Throuser</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./led4.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Short dress</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./cloth2.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Mens Throuser</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./sho3.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Short Hills</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img4.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">T Shirts</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img3.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">T Shirts</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img5.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Shirt</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img6.avif" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-tablet-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Shirt</h3>
+                            <div class="product-price">$299.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./traw1.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mouse"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Throuser</h3>
+                            <div class="product-price">$59.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./traw5.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Throuser</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./led3.png" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Summer Dress</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./gir4.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Skin Jeans</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./gir5.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Womens throuser</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h1 id="books-section">Book Store</h1>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b19.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-headphones"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Harry Potter</h3>
+                            <div class="product-price">$89.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./1.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-clock"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">The Girl Before</h3>
+                            <div class="product-price">$129.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./2.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">The Never List</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b12.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Making It In My Owm</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b3.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Give Me More</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b 4.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">You Need People</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b5.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">You Can Trast Me</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b6.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Love Story</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b7.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">God Of Milice</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b8.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">My Other Heart</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b9.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mobile-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Best Mom Ever</h3>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b10.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Check Me Out <br> by.Albert ninca</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b11.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Harry Potter</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b12.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Making It In My Own</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b13.png" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-tablet-alt"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">The Terminal List</h3>
+                            <div class="product-price">$299.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b14.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-mouse"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Wait For Me</h3>
+                            <div class="product-price">$59.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b15.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Place Nice</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b16.webp" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">A Family Matter</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b17.jpeg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Book Club</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./b18.jpg" alt="" width="75%" height="170" style="border-radius: 15px;">
+                            <!-- <i class="fas fa-volume-up"></i> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">If I Can <br>You Can</h3>
+                            <div class="product-price">$49.99</div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+    </div>
+    <script>
+        // Simple cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                const product = this.parentElement.querySelector('.product-title').textContent;
+                const price = this.parentElement.querySelector('.product-price').textContent;
+                // Update cart count
+                const cartCount = document.querySelector('.cart-count');
+                cartCount.textContent = parseInt(cartCount.textContent) + 1;
+                // Show confirmation
+                alert(`You Added ${product} (${price}) to cart!`);
+            });
+        });
+
+        // Category scroll functionality
+        // ...existing code...
+// Category scroll functionality
+document.getElementById('electronics').addEventListener('change', function() {
+    if(this.checked) {
+        document.getElementById('electronics-section').scrollIntoView({behavior: 'smooth'});
+    }
+});
+document.getElementById('fashion').addEventListener('change', function() {
+    if(this.checked) {
+        document.getElementById('fashion-section').scrollIntoView({behavior: 'smooth'});
+    }
+});
+document.getElementById('books').addEventListener('change', function() {
+    if(this.checked) {
+        document.getElementById('books-section').scrollIntoView({behavior: 'smooth'});
+    }
+});
+// ...existing code...
+        // You can add more categories as needed
+    </script>
+    <!-- <script>
+const hamburger = document.getElementById('hamburger-menu');
+const navLinks = document.getElementById('navbar-links');
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+  });
+  hamburger.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      navLinks.classList.toggle('active');
+    }
+  });
+}
+</script> -->
+    <script src="menu.js"></script>
+</body>
+
+</html>
